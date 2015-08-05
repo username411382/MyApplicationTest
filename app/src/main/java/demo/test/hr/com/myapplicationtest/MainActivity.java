@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import demo.test.hr.com.myapplicationtest.ui.PullToRefreshExpandableListActivity;
-import demo.test.hr.com.myapplicationtest.ui.ViewActivity;
+import demo.test.hr.com.myapplicationtest.ui.RefreshActivity;
 
 
 public class MainActivity extends Activity implements View.OnClickListener{
@@ -49,7 +49,7 @@ public class MainActivity extends Activity implements View.OnClickListener{
                 overridePendingTransition(R.anim.zoom_in,R.anim.zoom_out);
                 break;
             case R.id.text4:
-                Intent intent4=new Intent(this, ViewActivity.class);
+                Intent intent4=new Intent(this, RefreshActivity.class);
                 startActivity(intent4);
                 break;
         }

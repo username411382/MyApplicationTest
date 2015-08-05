@@ -17,7 +17,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".ui.PullToRefreshExpandableListActivity"/>
-        <activity android:name=".ui.ViewActivity"/>
+        <activity android:name=".ui.RefreshActivity"/>
     </application>
 
 </manifest>

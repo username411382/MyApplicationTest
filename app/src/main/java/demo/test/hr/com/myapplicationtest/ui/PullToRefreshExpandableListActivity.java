@@ -58,9 +58,6 @@ public final class PullToRefreshExpandableListActivity extends ExpandableListAct
 			}
 		});
 
-
-
-
 		for (String group : mGroupStrings) {
 			Map<String, String> groupMap1 = new HashMap<String, String>();
 			groupData.add(groupMap1);
