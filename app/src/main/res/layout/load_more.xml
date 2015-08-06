@@ -3,6 +3,7 @@
     android:id="@+id/loadmore_layout"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:background="@color/light_blue"
     android:paddingBottom="20dp"
     android:paddingTop="20dp" >
     <ImageView
@@ -21,7 +22,7 @@
         android:layout_centerInParent="true"
         android:gravity="center"
         android:text="@string/loadmore"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="16sp" />
 
 </RelativeLayout>

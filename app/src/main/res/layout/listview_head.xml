@@ -9,9 +9,9 @@
         android:layout_height="match_parent"
         android:layout_centerInParent="true"
         android:gravity="center"
-        android:text="@string/head"
+        android:text="Head视图"
         android:textColor="@color/black"
-        android:textSize="16sp" />
+        android:textSize="26sp" />
     <View 
         android:layout_width="match_parent"
         android:layout_height="1px"
