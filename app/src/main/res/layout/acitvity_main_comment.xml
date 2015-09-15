@@ -1,0 +1,116 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:clickable="true"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+
+
+      	<LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:background="@color/gray"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/gridview_ly"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@color/white"
+                 >
+                <GridView
+                    android:id="@+id/comment_hot_gridview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:numColumns="2"
+                    android:stretchMode="columnWidth" >
+                </GridView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                 >
+
+                   <!--  <ListView
+                        android:id="@+id/comment_history_listview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="32dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@color/bg_white"
+                        android:divider="@color/bg_gray"
+                        android:dividerHeight="5dp" >
+                    </ListView> -->
+                    
+                 <!--    <com.handmark.pulltorefresh.library.PullToRefreshListView 
+                         android:id="@+id/comment_history_listview"
+                         android:layout_width="match_parent"
+                       	 android:layout_height="wrap_content"
+                       	 /> -->
+                    
+                    <!--  <com.handmark.pulltorefresh.library.PullToRefreshListView 
+                         android:id="@+id/comment_history_listview"
+                         android:layout_width="match_parent"
+                       	 android:layout_height="wrap_content"
+                         android:layout_marginBottom="32dp"
+                         android:layout_marginTop="15dp"
+                         android:background="@color/bg_white"
+                         android:cacheColorHint="#00000000"
+                         android:divider="@color/bg_gray"
+                         android:dividerHeight="5dp"
+                         android:fadingEdge="none"
+                         android:fastScrollEnabled="false"
+                         android:footerDividersEnabled="false"
+                         android:headerDividersEnabled="false"
+                         android:smoothScrollbar="true">
+                         
+                     </com.handmark.pulltorefresh.library.PullToRefreshListView> -->
+
+                     <com.handmark.pulltorefresh.library.PullToRefreshListView
+                         android:id="@+id/comment_history_listview"
+                         android:layout_width="match_parent"
+                       	 android:layout_height="wrap_content"
+                         android:layout_marginBottom="32dp"
+                         android:layout_marginTop="15dp"
+                         android:background="@color/white"
+                         android:cacheColorHint="#00000000"
+                         android:divider="@color/gray"
+                         android:dividerHeight="5dp"
+                         android:fadingEdge="none"
+                         android:visibility="visible"
+                         android:fastScrollEnabled="false"
+                         android:footerDividersEnabled="false"
+                         android:headerDividersEnabled="false"
+                         android:smoothScrollbar="true" />
+             <!--             
+                          <com.handmark.pulltorefresh.library.PullToRefreshListView
+        xmlns:ptr = "http://schemas.android.com/apk/res-auto" 
+        android:id="@+id/comment_history_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:dividerHeight="4dp"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:smoothScrollbar="true"
+		ptr:ptrMode="both"
+         /> -->
+               
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    
+
+</RelativeLayout>

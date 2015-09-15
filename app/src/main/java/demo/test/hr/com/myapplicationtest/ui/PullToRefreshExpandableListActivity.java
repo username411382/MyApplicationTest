@@ -56,6 +56,7 @@ public final class PullToRefreshExpandableListActivity extends ExpandableListAct
 				// Do work to refresh the list here.
 				new GetDataTask().execute();
 			}
+
 		});
 
 		for (String group : mGroupStrings) {
@@ -76,6 +77,9 @@ public final class PullToRefreshExpandableListActivity extends ExpandableListAct
 				new String[] { KEY }, new int[] { android.R.id.text1 }, childData,
 				android.R.layout.simple_expandable_list_item_2, new String[] { KEY }, new int[] { android.R.id.text1 });
 		setListAdapter(mAdapter);
+
+
+		//mPullRefreshListView.setAdapter(mAdapter);
 	}
 
 	private class GetDataTask extends AsyncTask<Void, Void, String[]> {

@@ -2,7 +2,9 @@ package demo.test.hr.com.myapplicationtest;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 
 import demo.test.hr.com.myapplicationtest.ui.PullToRefreshExpandableListActivity;
@@ -20,6 +22,9 @@ public class MainActivity extends Activity implements View.OnClickListener{
         findViewById(R.id.text2).setOnClickListener(this);
         findViewById(R.id.text3).setOnClickListener(this);
         findViewById(R.id.text4).setOnClickListener(this);
+
+        Log.d("ruihe", "1----->" + android.os.Build.MANUFACTURER);
+        Log.d("ruihe","2----->"+ Build.MODEL);
 
     }
 
